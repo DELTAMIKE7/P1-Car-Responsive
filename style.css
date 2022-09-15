@@ -1,0 +1,183 @@
+@font-face {
+    font-family: Delirium ncv;
+    src: url(./DELIRIUM\ NCV.ttf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: Gilroy;
+    src: url(./Radomir\ Tinkov\ -\ Gilroy-Light.otf);
+    font-weight: 400;
+}
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: Delirium ncv;
+   color: #fff;
+}
+html,body{
+   height: 100%;
+   width: 100%;
+}
+#main{
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+    width: 100%;
+    background: radial-gradient(#c9d0cd 6%,#91aca2,#86B2A3,#86B2A3);
+}
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 14vh;
+    width: 100vw;
+    padding: 0 5vw;
+}
+#ncenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #fff;
+}
+#nav #ncenter .line{
+    height: 1.5px;
+    width: 10vw;
+    background-color: #586561;
+}
+#ncenter h3{
+    font-size: 2.2vw;
+    font-weight: 100;
+}
+#nav i{
+    color: #fff;
+    font-size: 1.5vw;
+}
+#maintext{
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.trow{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.trow h4{
+    font-size: 2.3vw;
+    font-weight: 100;
+}
+#maintext h1{
+    font-size: 14vw;
+    font-weight: 100;
+}
+#maintext .trow h4:nth-child(2){
+    color: #303634;
+}
+#main #image1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:45vw;
+}
+#main #image3{
+    position: absolute;
+    top: 40%;
+    left: 0%;
+    transform: translate(-50%, 0%);
+    width:15vw;
+}
+#main #image2{
+    position: absolute;
+    top: 40%;
+    right: -13%;
+    transform: translate(-50%, 0%);
+    width:15vw;
+}
+#bottom{
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:45vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#bottom p{
+    text-align: center;
+    font-size: 1vw ;
+    width: 90%;
+    font-family: gilroy;
+}
+#bottom button{
+    border: none;
+    outline: none;
+    padding: .8vw 1vw ;
+    font-family: gilroy;
+    border-radius: 30px;
+    color: #435d54;
+    font-size: 1vw;
+    letter-spacing: .5vw;
+}
+@media (max-width:500px) {
+    
+    #nav i{
+        font-size: 4.5vw;
+    }
+    #ncenter{
+        gap: 5px;
+    }
+    #ncenter h3{
+        font-size: 6.2vw;
+        letter-spacing: .6vw;
+    }
+    #maintext {
+        top: 27%;
+    }
+    #maintext h1{
+        white-space: nowrap;
+        font-size: 30vw;
+        font-weight: 100;
+    }
+    .trow h4{
+        font-size: 4.7vw;
+        letter-spacing: .5vw;
+        font-weight: 100;
+         margin-bottom: 3px;
+    }
+    #main #image1{
+        width: 82vw;
+    }
+    #main #image2{
+        right: -7%;
+        transform: translate(0%,0%);
+        top: 50%;
+        width: 20vw;
+    }
+    #main #image3{
+        left: -10%;
+        transform: translate(0%,0%);
+        top: 50%;
+        width: 20vw;
+    }   
+    #bottom{
+        bottom: 7%;
+        width: 80%;
+    }
+    #bottom p {
+        font-size: 4vw;
+        width: 100%;
+    }
+    #bottom button {
+        padding: 1.5vw 6vw;
+        font-size: 4vw;
+        letter-spacing: .7vw;
+    }
+}
